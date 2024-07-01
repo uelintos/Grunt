@@ -1,0 +1,52 @@
+@firstFont: "Roboto", sans-serif;
+@secFont: "Lobster", sans-serif;
+@titleColor: #fff;
+@backCollor: #eb3b5a;
+@btnColor: #000;
+@btnBackground: #f7b731;
+
+body{
+    background-color: @backCollor;
+    font-family: @firstFont;
+}
+h1{
+    font-family: @secFont;
+    color: @titleColor;
+    font-size: 3em;
+}
+
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+button{
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: @btnBackground;    
+    color: @btnColor;
+    font-family: @firstFont;
+}
+
+input{
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    max-width: 120px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #FFF;
+    border-bottom: 6px solid #fff;
+    -moz-appearance: textfield;
+
+    &:focus{
+        outline: none;
+    }
+}
